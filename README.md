@@ -3,7 +3,7 @@ The data and scripts for "Separating Controversy from Noise: Comparison and Norm
 
 ## Data
 
-The network_data contains two subfolders (single_hashtag_networks and multiple_hashtag_networks). All the networks are in .edgelist format. The folder contains 183 topic endorsement networks inferred from Twitter interactions during the 2019 Finnish Elections. Nodes are accounts and undirected ties indicate uni- or bi-directional endorsement via retweets on the given topic. Please see Chen et al. 2020 and Salloum et al. 2021 for details. No identifying information nor original raw data from the Twitter platform is included here. See the *network_info.csv* for more details on each network.
+The network_data contains two subfolders (single_hashtag_networks and multiple_hashtag_networks). All the networks are in .edgelist format. The folder contains 183 topic endorsement networks inferred from Twitter interactions during the 2019 Finnish Elections. Nodes are accounts and undirected ties indicate uni- or bi-directional endorsement via retweets on the given topic. Please see [1] and [2] for details. No identifying information nor original raw data from the Twitter platform is included here. See the *network_info.csv* for more details on each network.
 
 ## Scripts
 
