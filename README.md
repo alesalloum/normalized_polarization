@@ -19,4 +19,8 @@ The network_data contains two subfolders (single_hashtag_networks and multiple_h
 <a id="1">[1]</a> 
 Chen, Ted Hsuan Yun, et al. "Polarization of Climate Politics Results from Partisan Sorting: Evidence from Finnish Twittersphere." arXiv preprint arXiv:2007.02706 (2020).
 
+<<<<<<< HEAD
 <a id="1">[2]</a> Salloum, Ali, et al. "Separating Controversy from Noise: Comparison and Normalization of Structural Polarization Measures." arXiv preprint arXiv:2101.07009
+=======
+[2] Salloum, Ali, et al. "Separating Controversy from Noise: Comparison and Normalization of Structural Polarization Measures." arXiv preprint arXiv:2101.07009
+>>>>>>> aa70a937bed1e698dbe1cae5124985999137b6d2
