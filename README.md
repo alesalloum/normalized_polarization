@@ -21,4 +21,4 @@ Chen, Ted Hsuan Yun ; Salloum, Ali ; Gronow, Antti ; Ylä-Anttila, Tuomas ; Kive
 
 <a id="2">[2]</a> Salloum, Ali ; Chen, Ted Hsuan Yun ; Kivelä, Mikko. / Separating Polarization from Noise: Comparison and Normalization of Structural Polarization Measures. In: Proc. ACM Hum.-Comput. Interact. 6, CSCW1 ; 2022 ; Article 115 ; Vol 6. (https://doi.org/10.1145/3512962)
 
-*The network data is from the first source, and the polarization scores from the latter*
+*Please, cite the first paper if you use the network data, and the second one if you use the normalized polarization scores. Thanks!*
