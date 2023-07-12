@@ -4,6 +4,7 @@ import scipy
 import scipy.sparse
 from scipy.sparse.linalg import eigsh
 import networkx as nx
+import networkx.algorithms.community as nx_comm
 import numpy as np 
 import metis
 
