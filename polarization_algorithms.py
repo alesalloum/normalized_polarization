@@ -114,7 +114,7 @@ def krackhardt_ratio_pol(G, ms):
     EL = 0
     IL = 0
     
-    for e in G.edges:
+    for e in G.edges():
         s, t = e
 
         if ms[s] != ms[t]:
@@ -137,7 +137,7 @@ def extended_krackhardt_ratio_pol(G, ms):
     c_b = len(G.subgraph(block_b).edges)
     c_ab = 0
     
-    for e in G.edges:
+    for e in G.edges():
         s, t = e
 
         if ms[s] != ms[t]:
@@ -204,7 +204,7 @@ def gmck_pol(G, ms):
 
     B = []
 
-    for e in G.edges:
+    for e in G.edges():
         s, t = e
 
         if ms[s] != ms[t]:
