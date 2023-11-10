@@ -9,6 +9,8 @@ The network_data contains two subfolders (single_hashtag_networks and multiple_h
 
 *polarization_algorithms.py*: the implementations of all polarization measures analyzed in the paper
 
+*improved_polarization_algorithms.py*: faster and better documented implementation of the polarization algorithms [Recommended]
+
 *partition_algorithms.py*: the different partition algorithms used for obtaining the two groups
 
 *dk_analysis.py*: computing the polarization scores for randomized networks
