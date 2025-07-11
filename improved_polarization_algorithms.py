@@ -214,13 +214,17 @@ def BCC_polarization(G: nx.Graph, ms: Dict[Any, int]) -> float:
     if len(cut_edges) <= 1:
         raise ValueError("Not enough cut edges to compute the polarization.")
 
-    cut_ebc = [dict_eb[e] for e in cut_edges]
-    rest_ebc = [dict_eb[e] for e in rest_edges]
+    def _edge_value(e):
+        """Return edge betweenness centrality for an undirected edge."""
+        return dict_eb.get(e, dict_eb.get((e[1], e[0])))
+
+    cut_ebc = [_edge_value(e) for e in cut_edges]
+    rest_ebc = [_edge_value(e) for e in rest_edges]
 
     kernel_for_cut = scipy.stats.gaussian_kde(cut_ebc, "silverman")
     kernel_for_rest = scipy.stats.gaussian_kde(rest_ebc, "silverman")
 
-    bbc_dist = []
+    bcc_dist = []
     n_iterations = 10
     resample_size = int(1e4)
 
@@ -235,11 +239,11 @@ def BCC_polarization(G: nx.Graph, ms: Dict[Any, int]) -> float:
 
         BCCval = 1 - math.e ** (-kl_divergence)
         
-        bbc_dist.append(BCCval)
-    
-    bbc_score = sum(bbc_dist) / len(bbc_dist)
+        bcc_dist.append(BCCval)
 
-    return bbc_score
+    bcc_score = sum(bcc_dist) / len(bcc_dist)
+
+    return bcc_score
 
 # Boundary Polarization (BP, GMCK)
 
